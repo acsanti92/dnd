@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48144dcc8f5043f6a1cfb591961abd6, type: 3}
+  m_Name: SecondCharacter
+  m_EditorClassIdentifier: 
+  abilities:
+  - abilityScore: 10
+    ability: 0
+  - abilityScore: 10
+    ability: 1
+  - abilityScore: 10
+    ability: 2
+  - abilityScore: 10
+    ability: 3
+  - abilityScore: 10
+    ability: 4
+  - abilityScore: 10
+    ability: 5
