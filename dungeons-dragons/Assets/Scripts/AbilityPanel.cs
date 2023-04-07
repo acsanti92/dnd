@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class AbilityPanel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // 
+    [SerializeField] List<AbilityUIElement> abilityUI;
 
-    // Update is called once per frame
-    void Update()
+    //
+    public void UpdatePanel(List<Ability> abilityUI)
     {
-        
+        for (int i = 0; i < abilityUI.Count; i++)
+        {
+            abilityUI[i].SetAbility(abilities[i]);
+        }
     }
 }
