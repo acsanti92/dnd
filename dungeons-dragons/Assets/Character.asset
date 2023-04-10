@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Character
   m_EditorClassIdentifier: 
   abilities:
-  - abilityScore: 10
+  - abilityScore: 11
     ability: 0
   - abilityScore: 10
     ability: 1

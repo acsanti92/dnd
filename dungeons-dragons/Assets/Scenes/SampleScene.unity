@@ -517,6 +517,7 @@ GameObject:
   - component: {fileID: 209955785}
   - component: {fileID: 209955787}
   - component: {fileID: 209955786}
+  - component: {fileID: 209955788}
   m_Layer: 5
   m_Name: Wisdom
   m_TagString: Untagged
@@ -645,6 +646,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209955784}
   m_CullTransparentMesh: 1
+--- !u!114 &209955788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209955784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cc797ddcd084be586073652c6934c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityScore: {fileID: 829317428}
 --- !u!1 &262430455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2868,6 +2882,7 @@ GameObject:
   - component: {fileID: 1019213358}
   - component: {fileID: 1019213360}
   - component: {fileID: 1019213359}
+  - component: {fileID: 1019213361}
   m_Layer: 5
   m_Name: Constitution
   m_TagString: Untagged
@@ -2996,6 +3011,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019213357}
   m_CullTransparentMesh: 1
+--- !u!114 &1019213361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019213357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cc797ddcd084be586073652c6934c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityScore: {fileID: 605836394}
 --- !u!1 &1052175908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3386,6 +3414,7 @@ GameObject:
   - component: {fileID: 1119236842}
   - component: {fileID: 1119236844}
   - component: {fileID: 1119236843}
+  - component: {fileID: 1119236845}
   m_Layer: 5
   m_Name: Dexterity
   m_TagString: Untagged
@@ -3514,6 +3543,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119236841}
   m_CullTransparentMesh: 1
+--- !u!114 &1119236845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119236841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cc797ddcd084be586073652c6934c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityScore: {fileID: 866112639}
 --- !u!1 &1168634631
 GameObject:
   m_ObjectHideFlags: 0
@@ -3862,6 +3904,7 @@ GameObject:
   - component: {fileID: 1205182922}
   - component: {fileID: 1205182924}
   - component: {fileID: 1205182923}
+  - component: {fileID: 1205182925}
   m_Layer: 5
   m_Name: Intelligence
   m_TagString: Untagged
@@ -3990,6 +4033,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205182921}
   m_CullTransparentMesh: 1
+--- !u!114 &1205182925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205182921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cc797ddcd084be586073652c6934c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityScore: {fileID: 1052175910}
 --- !u!1 &1208943322
 GameObject:
   m_ObjectHideFlags: 0
@@ -4081,6 +4137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: ec91dc1534e524148a6773c97279bdfd, type: 2}
+  abilityPanel: {fileID: 1228575812}
 --- !u!1 &1228575808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4092,8 +4149,9 @@ GameObject:
   - component: {fileID: 1228575809}
   - component: {fileID: 1228575811}
   - component: {fileID: 1228575810}
+  - component: {fileID: 1228575812}
   m_Layer: 5
-  m_Name: AttributePanel
+  m_Name: AbilityPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4164,6 +4222,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228575808}
   m_CullTransparentMesh: 1
+--- !u!114 &1228575812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228575808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fce39b4bd6414361a9724e9a951ba15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityUI:
+  - {fileID: 1316612299}
+  - {fileID: 1119236845}
+  - {fileID: 1019213361}
+  - {fileID: 1205182925}
+  - {fileID: 209955788}
+  - {fileID: 2123194807}
 --- !u!1 &1239038346
 GameObject:
   m_ObjectHideFlags: 0
@@ -4390,6 +4467,7 @@ GameObject:
   - component: {fileID: 1316612296}
   - component: {fileID: 1316612298}
   - component: {fileID: 1316612297}
+  - component: {fileID: 1316612299}
   m_Layer: 5
   m_Name: Strength
   m_TagString: Untagged
@@ -4520,6 +4598,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316612295}
   m_CullTransparentMesh: 1
+--- !u!114 &1316612299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316612295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cc797ddcd084be586073652c6934c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityScore: {fileID: 632116843}
 --- !u!1 &1332753565
 GameObject:
   m_ObjectHideFlags: 0
@@ -5437,6 +5528,7 @@ GameObject:
   - component: {fileID: 2123194804}
   - component: {fileID: 2123194806}
   - component: {fileID: 2123194805}
+  - component: {fileID: 2123194807}
   m_Layer: 5
   m_Name: Charisma
   m_TagString: Untagged
@@ -5565,3 +5657,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123194803}
   m_CullTransparentMesh: 1
+--- !u!114 &2123194807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123194803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cc797ddcd084be586073652c6934c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityScore: {fileID: 1737986110}

@@ -5,8 +5,11 @@ using UnityEngine;
 public class AbilityUIElement : MonoBehaviour
 {
     [SerializeField] TMPro.TextMeshProUGUI abilityScore;
-    internal void SetAbility(Ability ability)
+    [SerializeField] TMPro.TextMeshProUGUI abilityMod;
+
+    internal void Set(Ability ability)
     {
         abilityScore.text = ability.abilityScore.ToString();
+        abilityMod.text = ability.Mod.ToString();
     }
 }

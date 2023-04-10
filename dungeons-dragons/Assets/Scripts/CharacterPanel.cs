@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterPanel : MonoBehaviour
 {
     // This is the character that the panel is displaying.
-    [SerializeField] Character character;
+    public Character character;
     // This is the panel that displays the abilities.
     [SerializeField] AbilityPanel abilityPanel;
 

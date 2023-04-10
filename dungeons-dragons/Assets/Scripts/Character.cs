@@ -21,6 +21,17 @@ public class Ability
     public int abilityScore;
     public CharacterAbility ability;
 
+    // This is the modifier for the ability score.
+    public int Mod
+    {
+        get
+        {
+            int mod = abilityScore - 10;
+            mod += mod < 0 ? -1 : 0;
+            return mod / 2;
+        }
+    }
+
     public Ability(CharacterAbility ability, int abilityScore)
     {
         this.ability = ability;
@@ -34,6 +45,13 @@ public class Character : ScriptableObject
 {
     // List of abilities that the character has.
     public List<Ability> abilities;
+
+    //
+    internal void ChangeAbilityScore(CharacterAbility ability, int amount)
+    {
+        Ability a = abilities[(int)ability];
+        a.abilityScore += amount;
+    }
 
     // This is called when the script is loaded or a value is changed in the inspector.
     void Reset()
